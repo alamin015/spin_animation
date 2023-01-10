@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    background: rgb(11, 9, 39);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.all_circle{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.spin{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.spin1{
+    width: 300px;
+    height: 300px;
+    border: 2px solid red;
+}
+.small_1{
+    position: relative;
+    background: red;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    animation: spin1 7s linear infinite;
+}
+@keyframes spin1{
+    0%{
+        transform: rotate(0deg) translate(150px) rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg) translate(150px) rotate(360deg);
+    }
+}
+
+
+
+.spin2{
+    width: 250px;
+    height: 250px;
+    border: 2px solid green;
+}
+
+.small_2{
+    position: relative;
+    background: green;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    animation: spin2 6s linear infinite;
+}
+
+@keyframes spin2{
+    0%{
+        transform: rotate(0deg) translate(125px) rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg) translate(125px) rotate(360deg);
+    }
+}
+
+.spin3{
+    width: 200px;
+    height: 200px;
+    border: 2px solid yellow;
+}
+
+.small_3{
+    position: relative;
+    background: yellow;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    animation: spin3 5s linear infinite;
+}
+
+@keyframes spin3{
+    0%{
+        transform: rotate(0deg) translate(100px) rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg) translate(100px) rotate(360deg);
+    }
+}
